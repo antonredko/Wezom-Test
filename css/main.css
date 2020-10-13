@@ -4,6 +4,23 @@
     box-sizing: border-box;
     outline: none;
 }
-body {
+body, .header-top{
     width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.content {
+    max-width: 1360px;
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    font-family: 'Roboto-Regular';
+    font-size: 12px;
+    line-height: 20px;
+}
+.header_top {
+    height: 50px;
+    background: #696969;
 }
