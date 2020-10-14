@@ -92,7 +92,21 @@
                         </div>
                     </div>
                     <div class="menu_link_container">
-                        <div class="cart_count"></div>
+                        <div class="cart_count">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
+                                <defs>
+                                    <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px"  >
+                                        <feOffset in="SourceAlpha" dx="0" dy="5" />
+                                        <feGaussianBlur result="blurOut" stdDeviation="2.828" />
+                                        <feFlood flood-color="rgb(247, 129, 0)" result="floodOut" />
+                                        <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                        <feComponentTransfer><feFuncA type="linear" slope="0.7"/></feComponentTransfer>
+                                        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                                    </filter>
+                                </defs>
+                                <g filter="url(#Filter_0)"><path fill-rule="evenodd"  fill="rgb(255, 133, 0)" d="M21.999,16.000 L17.000,20.999 L12.001,16.000 L7.000,16.000 L7.000,2.000 L27.000,2.000 L27.000,16.000 L21.999,16.000 Z"/></g>
+                            </svg>
+                        </div>
                         <div class="menu_link">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="35" viewBox="0 0 40 35">
                                 <metadata>
