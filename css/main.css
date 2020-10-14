@@ -7,13 +7,18 @@
 body, .header-top{
     width: 100%;
 }
+body {
+    background: #ffffff;
+}
 a {
     text-decoration: none;
 }
 .content {
-    max-width: 1360px;
+    width: 1360px;
+    height: inherit;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header {
     font-family: 'Roboto-Regular';
@@ -23,4 +28,96 @@ header {
 .header_top {
     height: 50px;
     background: #696969;
+    display: flex;
+    justify-content: center;
+}
+.navbar, .enter {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    height: inherit;
+    padding: 0 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b6b6b6;
+    border-bottom: 2px solid #696969;
+}
+.navbar a:hover, .navbar a:active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffc925;
+}
+.enter button, .phones button {
+    height: inherit;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: #ff8900;
+}
+.enter button svg {
+    margin-right: 11px;
+}
+.header_bottom {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    margin-left: 17px;
+}
+.phones {
+    display: flex;
+}
+.tel {
+    color: #151515;
+    background: #f5f5f5;
+    padding: 18px 40px 16px 12px;
+    font-family: 'Roboto-BoldItalic';
+    font-size: 16px;
+    line-height: 20px;
+}
+.tel:last-child {
+    padding-left: 0;
+}
+.phones button svg {
+    margin-right: 7px;
+}
+.menu {
+    display: flex;
+    margin-right: 4px;
+}
+.menu_link_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+.menu_link_container:last-child .menu_link {
+    border: none;
+}
+.menu_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 36px;
+    border-right: 1px solid #e4e4e4;
+}
+.menu_link p {
+    font-family: 'Roboto-Regular';
+    font-size: 10px;
+    line-height: 20px;
+    color: #151515;
+}
+.cart_count {
+    width: 20px;
+    height: 14px;
+    color: #ffffff;
+    background:  #ff8900;
 }
