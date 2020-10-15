@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="17" height="13">
+                            <defs><image width="17" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAQ0lEQVQ4T2NkoAJgpIIZDHBD/v///58YAxkZGTEspq4hxLgCl5qBCRN014DCiOQwwWvI0AgTbGkD2eVEhQnRhlASJgAqjxgOXEGcYAAAAABJRU5ErkJggg=="/></defs>
+                            <style>tspan { white-space:pre }</style>
+                            <use id="burger" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+                        </svg>
