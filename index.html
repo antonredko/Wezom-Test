@@ -124,7 +124,7 @@
             </div>
             <div class="search">
                 <form id="search_field" name="search">
-                    <input type="text" placeholder="Поиск по сайту">
+                    <input type="text" placeholder="Поиск по сайту" minlength="2">
                     <div class="line"></div>
                     <select name="kateg">
                         <option selected value="all_kat">Все категории</option>
@@ -139,76 +139,60 @@
                 <div class="filters">
                     <div class="filters_links">
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="17" viewBox="0 0 40 17">
-                                <metadata>
-                                    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01">
-                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF>
-                                        </x:xmpmeta>                  
-                                    <?xpacket end="w"?>
-                                </metadata>
-                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="40" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAARCAMAAACYVR46AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABrVBMVEX/ySX/////ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySX/ySUAAAD4mhBFAAAAjXRSTlMAABFyhbLb7/PKpGMOYrv99Y0kxfvDb0ApGc2fg9bqWzptcKD88C/LAVbcuTN42vhVBRclCIT6yXs1BPHBtKm37eXPsOHpx3QCELHAr3GJdXog5CsH1DzyIdCCNtHCs6ItgCaT2aidzFl+96yuyFiBLC4TV/ni1eNEl15c7LrgSz+h7pAVXRYa/s5NpfSNqxnCAAAAAWJLR0SOggWzbwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+QKDxQYAiToCRoAAAGESURBVCjPdZL3P0JRGIePMq6Ma0ciGmTkokQykk1GVvae2crM3uv7Pzvn3orC88s5532fz/ueRUgYmTw2Lj4B4BIVSbJwNCZIaJ2cksrjm7R02Z9iRmYWS2fnKHPzVMhXFwCFmmixqFir0wMGNYcSlilGKTGWlQMVlRGiSWxVBaEaWTUsU8vDTIilzgrUN9gaw6IdTc0tSmMr9HDoRNrgZEN7B6ug7+zqVvYwka0ye0lyH/6nQxMU0U1b9sOlFXEhURtiYFChcKUBQ0x0qDBMiHsESumcWui+L9c9OhYzTktNiBU9k7YpOkwbo8WZWXr/pjmamydWOBcWzR7wArAUJS5z4GnflexVcGQNwrqmHRub8i14F92UaWy7JXawuyffh/fgECBH/bQwD59/3HT8+7zV/pOhUzZxEGI8O3f6cXEq+ArBGSh2wWOQ4BFo85ZdsvCVtJl0XN/c3uHeQiJ4kMKXY+FP8Si+Ap4iPfIsbSbw45u9KLjXt3cSzcvHJ7/xLr71F3KpnqVjnONbAAAAAElFTkSuQmCC"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 34" width="40" height="17">
+                                <defs>
+                                    <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                                        <path d="M0 0L79 0L79 34L0 34Z" />
+                                    </clipPath>
+                                </defs>
+                                <style>
+                                    tspan { white-space:pre }
+                                    .shp0 { fill: none;stroke: #a0a6ad;stroke-width: 4 } 
+                                    .shp1 { fill: none;stroke: #a0a6ad;stroke-width: 2 } 
+                                    .shp2 { fill: none;stroke: #a0a6ad;stroke-linecap:round;stroke-width: 4 } 
+                                </style>
+                                <g id="Page 1" clip-path="url(#cp1)">
+                                    <path id="Path 1" class="shp0" d="M58.49 25.94L24.95 25.94M11.75 25.94C11.75 25.94 1.9 25.65 2 20.33C2.05 17.39 2.05 14.42 2.03 12.35C2.02 10.83 3.25 9.6 4.77 9.6L8.8 9.6C8.8 9.6 21.4 2.11 34.89 2.51C43.18 3.26 44.11 4.01 52.28 9.2C55.2 11.06 62.97 12.87 67.86 13.4C73.86 14.05 78.28 18.6 77.29 24.55C77.26 24.69 77.13 25.81 77.1 25.94L70.7 25.94M5.56 19.61L3.59 19.61L3.59 14.24L6.99 14.24C8.08 14.24 8.96 15.12 8.96 16.21C8.96 18.08 7.43 19.61 5.56 19.61ZM24.33 25.94C24.33 29.29 21.62 32 18.27 32C14.93 32 12.22 29.29 12.22 25.94C12.22 22.6 14.93 19.89 18.27 19.89C21.62 19.89 24.33 22.6 24.33 25.94Z" />
+                                    <path id="Path 2" class="shp1" d="M19.9 25.8C19.9 26.69 19.17 27.42 18.27 27.42C17.38 27.42 16.65 26.69 16.65 25.8C16.65 24.9 17.38 24.17 18.27 24.17C19.17 24.17 19.9 24.9 19.9 25.8Z" />
+                                    <path id="Path 3" class="shp0" d="M69.98 25.94C69.98 29.29 67.27 32 63.93 32C60.58 32 57.87 29.29 57.87 25.94C57.87 22.6 60.58 19.89 63.93 19.89C67.27 19.89 69.98 22.6 69.98 25.94Z" />
+                                    <path id="Path 4" class="shp1" d="M65.55 25.8C65.55 26.69 64.82 27.42 63.93 27.42C63.03 27.42 62.3 26.69 62.3 25.8C62.3 24.9 63.03 24.17 63.93 24.17C64.82 24.17 65.55 24.9 65.55 25.8Z" />
+                                    <path id="Path 5" class="shp2" d="M14.26 6.92C14.26 6.92 16.81 13.14 21.14 13.14L65.53 13.14M19.9 19.03L22.72 4.01M38.88 25.18L38.88 12.42L35.63 3.26" />
+                                    <path id="Path 6" class="shp0" d="M75.52 18.37C75.31 19.39 74.31 20.05 73.29 19.85C72.27 19.64 71.61 18.65 71.82 17.62C72.02 16.6 73.02 15.94 74.04 16.15" />
+                                </g>
                             </svg>
-                            <span>ССЫЛКА 1</span>
+                            <span>Ссылка 1</span>
                         </a>
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="32" viewBox="0 0 46 32">
-                                <metadata>
-                                    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01">
-                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF>
-                                        </x:xmpmeta>
-                                    <?xpacket end="w"?>
-                                </metadata>
-                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="46" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAgCAQAAADHuoLMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCg8UHwcbw2tSAAADA0lEQVRIx6XW3U8UZxTA4WdmF5YF10VFky6i9EsqGGirpU0Ta01KU9Mm1hvT3viP9bp37VVtemHTGxusNKFoCFpFhfBZGlJwpSAsTC92WBZlF5aeuXnnnPP+5sz5eGeCSM2ScFXe9d0dk7WzNcpIISFRwWPd+n7hEPhCrop9Sr9/wn3C66qiaXVZdr+RM+umBRE+1W7YGTN+iN/qsAta9O4dnnDWtEmkwCM9saXlBc/IvJuuaNs7/Ji3dbthXBqRdzRW8V5Ecu85nzUu1KdNACbNxNdKpS17jzxyQ5+T+gwicGr3LbUUdMPPLsk5h8i90t6cA06g2UFPyzcENU5o0jVJRL4p6XI+ix+06q41kNBb+xAVbLykm451a+qd229atr2xj+PVkIV4NW9Ws4QAoVyt8E9k1cXrzYI+KMEjAzKubp04tY1/1pG4EbdkcdvdWnlj1n62DPqz7O6+pW3WFd8a3D982mwc45Jhv+7gMW5ehLn9noo81eTMjjX725jAnOvV4elS+V6W4s6gon1OoXK3pLyry4LvKtiLvV15BjvN7gwPdTorRanNKkugNW6+Qz4wZVJkWV7GhzvB270vi6due1IR+j1Cb+mRiTUNunXLGzDisWsag+iKo7tGV13WjJtTJ63JcXUYc8vXJKX/F3jFXSNanJcFY57p0l4MOIiS0kJ9DmNZSijy0CkUrEthXH+MSsc9krQhD5YVvOJzoQ0rGjHvNxeLX6nikXvaeavG5OStOy4SeCSr3rQOgZ/8VSX6yw6ZFsiYcUJKvzEXZdwvwi9pc89pMKFVKC9yEJHHXt81ORsmnAQjOk35sagO4zpTiB0bPceSJhBY3kPm/y1Vbj2mxdmDvKPqPJfCpB40e+INLGjGkKGK4AZfOWDUMaxKEFejBH/oNR3uKNjwJtY1aDIglNEh8sBqRfiqCW1eNSBUpxujm6bNb+gFHWXtdctHZT+Zt92pmpSML8saetQvL8Lp0qXZqnG/e+aIXjmheX9UmdJNafKedvUWjRjeOm/+Azjt0yADz4K6AAAAAElFTkSuQmCC"/>
-                            </svg>
-                            <span>ССЫЛКА 2</span>
+                            
+                            <span>Ссылка 2</span>
                         </a>
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
-                                <metadata>
-                                    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01">
-                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF>
-                                        </x:xmpmeta>                           
-                                    <?xpacket end="w"?>
-                                </metadata>
-                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="25" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCg8UJisnn4oLAAACNklEQVQ4y53U3WtTeRDG8c85nCaxaxOtBtuyRaNtWdGSq1bL3uwbwQuXFSronyiIF4Kg1iW7IFJsr2qRqqQb1oApDS00kZgmKceLBvsSEPG5+zHzMD9m5jtB7IgG5IzLGhKINdRUlHUOpwSHLJG8aQnH1bZqRbffcsYfMmhaV9USiKWMumQQO/62ddQy5obInkVNU8Z6tdo+eGvInEDXEx8OLGf8JbItreF038ea2rrO6npoa98SmZdR89INkVhJSU1LStaECYG2Bddk7XigGyIvY9eigkjHpn9UtNBSsaTjk4SCRbsy8oQGTGPZrIS6B07IH/TTr/53X13CrGVMG4jkJDQ1jYgtqCu6iXNO+qjrpKc6Fswb8UrToFxkHOumULKNTVuugbP4TwfbSiZNWTdtPJRF1RhKIOcc1hSt4aIcvdiYKrKhIbQkUAOTWPPcpufWeu/9WEILQ6EAAWiBDKrS7kqr4tShWIAgFGN/BX4w6U+nMKrunrpRpN12VYZeXhxpSEvpitzR8MZbv7iMqrzL+FfoJ9fRlUIjiH93yScpgYrH4GdXvkzmtReg4II9exLWQxWEivjRMHjhmfd471nPMOw8imJUQmVtSUkbAgUpUFbEU2WQUhDYcEJSWznUsYoZS9rSbvUq+dKUYbektS2ZwapOhBUTMuYsKEibV1JS59gmz0nasXKUl5pFs0b6eNmwZE72MC8HVO5a7qPynUEzksep7Gc/9JtHX2f/uy7Mvr7hjn0GaFfaypp/zPsAAAAASUVORK5CYII="/>
-                            </svg>
-                            <span>ССЫЛКА 3</span>
+                            
+                            <span>Ссылка 3</span>
                         </a>
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="29" viewBox="0 0 22 29">
-                                <metadata>
-                                    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01">
-                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF>
-                                        </x:xmpmeta>                    
-                                    <?xpacket end="w"?>
-                                </metadata>
-                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="22" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAQAAAAEelRzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCg8UKSFA0n/aAAABpklEQVQ4y5XUzWsTYRTF4SdpGkPR1gjRYmMRrSQFvxZiVEgXItiVYDdu/QMt6FKhFdqNdFFoQFEsgX5QglFLrNJoY+IiTTKTGRe9u/e8P86cey/zJjqO64b7wvXNYlhIOkGlQqdd2/K2TftgPgqHnVv+aGtpa8U5J/qZ5xSH7o4s24p3zkSMRj32IPjtQeYvLtv3KRAgp+C6C5b8GIb/oqES8t4xJ2fBimq0weFBVi2qS3ukbCR4ncREJPeBVyqY9dTZAZzHhGwEb3vntd/OWejBWRdBOXZ1W14i1YPLEmpaJhVi8cNBSwWTWt5aRylm4oE5Z5Sw7kDFNVnP/IxwiR5ckrGvgrZVT5xSsR8xfUjKeQWsaoOaj4pmvNAJwelu5lv4rNaX1xzJuhSXOWkK7wNK0yam4htMoxHSGjjtTEgb7cJNGePqgYtxTMd5p+y54qalvjJmBm/sDDX4nKQNHVfdNXLsOi/tq934zHVrSm6bVZeWk9C0PDS4wAY3/HLPmDzYs9L7M+JgNlXdUfT9/+AApu1QRkuzu6tIpQk+BdHnK2aDJ6h/8DxowKkMCjMAAAAASUVORK5CYII="/>
-                            </svg>
-                            <span>ССЫЛКА 4</span>
+                            
+                            <span>Ссылка 4</span>
                         </a>
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="24" viewBox="0 0 26 24">
-                                <metadata>
-                                    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01">
-                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF>
-                                        </x:xmpmeta>
-                                    <?xpacket end="w"?>
-                                </metadata>
-                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-1" width="26" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAQAAABOiyVOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCg8ULAaYrz70AAAA3UlEQVQ4y72TPQ8BQRCGn/NxyKmIBBUNohJ68SM0OpW/pvELJFqFREWhkVx9hUiI5HzcKY77QrJ7xFSzu/PMvDO7q9igMsRvOlPfqkctcDrmECOCJVxvwgWo034TtWYFwCAM5bgC2tvUGfL+pWKP5OV90ZPTj4gl6T+hI2dBSPUqtbgJQnEPUrFkZuBACwl5zYjTC0IF0vJQl6II5D2jElU0GpSZByJSdB7ehl0YumFic8EMpbXdHeu1koFBhS16CDqz/CwPYMZJrieAvQjyk3sSNEdeVuJruFD/D/Lu0FMpHL5DPlMAAAAASUVORK5CYII="/>
-                            </svg>
-                            <span>ССЫЛКА 5</span>
+                            
+                            <span>Ссылка 5</span>
                         </a>
                     </div>
 
 
-                    <div>
-
-
+                    <div class="select_filters">
+                        <div class="radio_group">
+                            <div class="radio_item">
+                                <input id="radio_1" type="radio" name="radio" value="1" checked>
+                                <label for="radio_1">Tab 1</label>
+                            </div>
+                            <div class="radio_item">
+                                <input id="radio_2" type="radio" name="radio" value="2">
+                                <label for="radio_2">Tab 2</label>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

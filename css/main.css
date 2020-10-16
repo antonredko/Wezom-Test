@@ -275,7 +275,7 @@ header {
     font-family: 'Roboto-Bold';
     font-size: 18px;
     line-height: 40px;
-    color: #ffffff;
+    color: #a0a6ad;
     border-bottom: 2px solid #606a76;
     padding: 13.8px 19px;
     display: flex;
@@ -284,7 +284,45 @@ header {
 }
 .filters_links a:hover {
     border-bottom: 2px solid #ffc925;
+    color: #ffffff;
 }
+
+
 .filters_links a svg {
     margin-right: 13px;
+}
+.filters_links a:hover > svg * {
+    stroke: #ffc925;
+}
+
+.select_filters {
+    padding: 24px 32px 28px 36px;
+    background: #696969;
+}
+
+
+.radio_group {
+    display: flex;
+}
+.radio_group input[type=radio] {
+	display: none;
+}
+.radio_group label {
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    line-height: 40px;
+    padding: 10.5px 48px 10.5px 60px;
+    background: #efefef;
+    color: #696969;
+    border-top: 3px solid #efefef;
+    border-bottom: 3px solid #efefef;
+    border-left: 4px solid #efefef;
+    cursor: pointer;
+}
+.radio_item:last-child label {
+	border-right: 4px solid #efefef;
+}
+.radio_group input[type=radio]:checked + label {
+    background: #ff8900;
+    color: #ffffff;
 }
